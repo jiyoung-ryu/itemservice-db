@@ -1,12 +1,17 @@
 package hello.itemservice.domain;
 
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
+@Entity
 public class Item {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "item_name", length = 10)
     private String itemName;
     private Integer price;
     private Integer quantity;
