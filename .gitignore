@@ -17,6 +17,9 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+### Querydsl (IntelliJ 빌드 시 Q클래스 생성 위치) ###
+src/main/generated/
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
